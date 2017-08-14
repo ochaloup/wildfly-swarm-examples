@@ -64,6 +64,14 @@
       <artifactId>lombok</artifactId>
       <version>1.16.4</version>
     </dependency>
+    <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-client</artifactId>
+        <!-- examples uses resteasy at version 3.0.19.Final, but when specified the same here,
+             the swarm instance does not start. Thus changing to different one to show the behaviour
+             of not starting the rest easy handlers -->
+        <version>3.1.3.Final</version>
+    </dependency>
   </dependencies>
 
 </project>
